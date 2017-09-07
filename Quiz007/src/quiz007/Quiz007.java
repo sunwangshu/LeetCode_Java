@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package quiz002;
+package quiz007;
 import java.util.*;
 
 /**
  *
  * @author sunwangshu
  */
-public class Quiz002 {
+public class Quiz007 {
 
     /**
      * @param args the command line arguments
@@ -52,10 +52,10 @@ public class Quiz002 {
     }
     public static int reverse2_2(int x) {
         int result = 0;
-        while (x > 0) {
+        while (x != 0) {
             int temp = x % 10;
             int newResult = result * 10 + temp;
-            if ((result - temp)/10 != result) {
+            if ((newResult - temp)/10 != result) {
                 return 0;
             }
             result = newResult;
@@ -77,7 +77,7 @@ public class Quiz002 {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        int test = -1999999;
+        int test = -1999;
         test = reverse2_2(test);
         System.out.println(test);
     }
