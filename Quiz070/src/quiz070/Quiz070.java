@@ -41,10 +41,6 @@ public class Quiz070 {
             int ans = climbStairs(i);
             System.out.println(ans);
         }
-        for (int i = 0; i < 7; i++) {
-            int degree = 360 * i / 7;
-            System.out.println(degree);
-        } 
     }
     
 }
